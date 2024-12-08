@@ -19,7 +19,7 @@ Show # Runes
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 	
-	Show # Runes
+Show # Runes
 	BaseType "Charm"
 	SetFontSize 45
 	SetTextColor 127 9 255 255
@@ -45,15 +45,25 @@ Show # GOLDsmall
 	SetBackgroundColor 20 20 0 180
 	MinimapIcon 2 Grey Cross
 	
-	Show # Currency
-	BaseType == "Uncut Skill Gem" "Uncut Support Gem"
+Show # Gems
+	BaseType == "Uncut Skill Gem" "Uncut Support Gem" "Uncut Spirit Gem"
 	SetFontSize 45
 	SetTextColor 0 255 0 255
 	SetBorderColor 0 255 0
 	SetBackgroundColor 0 0 0
 	PlayEffect Green
 	MinimapIcon 0 Green Circle
-	
+
+Show # Trial Currencies
+	BaseType == "Djinn Barya" "Inscribed Ultimatum" 
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 39 89 60
+	SetFontSize 45
+	MinimapIcon 0 Green Cross
+	PlayEffect Green
+
 Show # Currency
 	Class == "Stackable Currency"
 	SetFontSize 45
@@ -63,7 +73,16 @@ Show # Currency
 	PlayEffect Red
 	MinimapIcon 0 Orange Circle
 	
-	Show # uniques
+Show # Maps
+	Class "Waystone"
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 159 83 236
+	PlayEffect Purple
+	MinimapIcon 0 Purple Cross
+
+Show # uniques
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 255 255 255 255
